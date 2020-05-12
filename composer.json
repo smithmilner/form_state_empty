@@ -1,0 +1,7 @@
+{
+    "name": "drupal/form_state_empty",
+    "type": "drupal-module",
+    "description": "Extends core's Form API States to allow the emptying of fields with javascript.",
+    "homepage": "https://www.drupal.org/project/form_state_empty",
+    "license": "GPL-2.0+"
+}

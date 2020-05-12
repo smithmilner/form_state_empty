@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Contains form_state_empty.module.
+ */
+
+/**
+ * Implements hook_library_info_alter().
+ *
+ * Declare our custom form state a dependency of core form states. This makes
+ * sure it is loaded when ever states are used.
+ */
+function form_state_empty_library_info_alter(&$libraries, $extension) {
+  if ($extension === 'core' && isset($libraries['drupal.states'])) {
+    $libraries['drupal.states']['dependencies'][] = 'form_state_empty/state-empty';
+  }
+}
