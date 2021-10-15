@@ -16,3 +16,17 @@ function form_state_empty_library_info_alter(&$libraries, $extension) {
     $libraries['drupal.states']['dependencies'][] = 'form_state_empty/state-empty';
   }
 }
+
+/**
+ * Implements hook_library_info_build().
+ */
+function form_state_empty_library_info_build() {
+  return [
+    'state-empty' => [
+      'js' => [
+        'js/state-empty.js' => [],
+      ],
+    ],
+  ];
+
+}
