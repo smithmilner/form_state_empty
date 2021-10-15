@@ -1,0 +1,4 @@
+state_empty:
+  version: VERSION
+  js:
+    js/state-empty.js: {}

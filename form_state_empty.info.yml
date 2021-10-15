@@ -2,4 +2,5 @@ name: 'Form State Empty'
 type: module
 description: 'Extends core''s Form API States to allow the emptying of fields with javascript.'
 core: 8.x
+core_version_requirement: ^8 || ^9
 package: 'Form'

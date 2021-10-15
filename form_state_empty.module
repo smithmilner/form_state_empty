@@ -13,6 +13,6 @@
  */
 function form_state_empty_library_info_alter(&$libraries, $extension) {
   if ($extension === 'core' && isset($libraries['drupal.states'])) {
-    $libraries['drupal.states']['dependencies'][] = 'form_state_empty/state-empty';
+    $libraries['drupal.states']['dependencies'][] = 'form_state_empty/state_empty';
   }
 }
