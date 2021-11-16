@@ -5,8 +5,8 @@
 (function formEmptyState($, Drupal) {
 
   Drupal.behaviors.stateEmpty = {
-    attach: (context) => {
-      $(context).on('state:empty', (e) => {
+    attach(context) {
+      $(context).on('state:empty', function(e) {
         if (e.trigger && e.value) {
           if (e.target.type == 'fieldset') {
             $("input[value='']", e.target).click();
@@ -20,7 +20,7 @@
         }
       });
     },
-    detach: (context) => {
+    detach(context) {
       $(context).off('state:empty');
     }
   };
